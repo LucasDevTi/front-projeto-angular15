@@ -1,0 +1,14 @@
+<div class="empresa-list">
+    <h2>Empresas</h2>
+    <div class="actions">
+        <button class="btn-cadastrar" (click)="onCadastrarClick()">Cadastrar Empresa</button>
+    </div>
+    <ul>
+        <li *ngFor="let empresa of empresas">
+            <a class="empresa-link" (click)="onEmpresaClick($event, empresa.id)">
+                {{ empresa.nome }}
+            </a>
+            <span class="cnpj">CNPJ: {{ empresa.cnpj }}</span>
+        </li>
+    </ul>
+</div>

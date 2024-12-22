@@ -1,0 +1,22 @@
+<!-- app.component.html -->
+<app-loading></app-loading>
+
+<!-- Condicionalmente mostrar o menu com base na rota -->
+<div *ngIf="!isLoginPage()">
+  <div class="dashboard-container">
+    <aside class="sidebar">
+      <h2>Menu</h2>
+      <ul>
+        <li><a routerLink="/dashboard/empresa" routerLinkActive="active">Empresa</a></li>
+        <li><a routerLink="/dashboard/socios" routerLinkActive="active">Sócios</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <router-outlet></router-outlet> <!-- A saída das rotas será aqui -->
+    </main>
+  </div>
+</div>
+
+<!-- Roteamento para páginas como login -->
+<router-outlet *ngIf="isLoginPage()"></router-outlet>

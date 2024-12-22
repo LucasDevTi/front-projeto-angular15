@@ -1,0 +1,97 @@
+
+.empresa-list {
+    padding: 20px;
+    background-color: #f9f9f9; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    /* max-width: 600px; */
+    margin: 20px auto; 
+    border: 1px solid #ddd;
+  }
+  
+  .empresa-list h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-align: center; 
+  }
+  
+  .empresa-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+  }
+  
+  .empresa-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); 
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .empresa-list li:hover {
+    transform: translateY(-3px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .empresa-list a {
+    text-decoration: none;
+    color: #3498db; 
+    font-size: 18px;
+    font-weight: bold;
+    flex-grow: 1;
+  }
+  
+  .empresa-list a:hover {
+    color: #1abc9c; 
+    cursor: pointer;
+  }
+  
+  .empresa-list .cnpj {
+    font-size: 14px;
+    color: #7f8c8d; 
+    font-style: italic;
+  }
+  
+  .empresa-list .icon {
+    font-size: 16px;
+    color: #e74c3c; 
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .empresa-list .icon:hover {
+    color: #c0392b; 
+  }
+  /* Botão de cadastrar */
+.actions {
+    margin-top: 20px;
+    text-align: end; /* Centraliza o botão */
+  }
+  
+  .btn-cadastrar {
+    background-color: #1abc9c; /* Verde */
+    color: #ffffff; /* Texto branco */
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .btn-cadastrar:hover {
+    background-color: #16a085; /* Verde mais escuro no hover */
+    transform: scale(1.05); /* Pequeno efeito de zoom no hover */
+  }
+  
+  .btn-cadastrar:active {
+    transform: scale(1); /* Remove o zoom ao clicar */
+  }

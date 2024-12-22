@@ -1,0 +1,15 @@
+<div class="socio-list">
+    <h2>Sócios</h2>
+    <div class="actions">
+        <button class="btn-cadastrar" (click)="onCadastrarClick()">Cadastrar sócio</button>
+    </div>
+    <ul>
+        <li *ngFor="let socio of socios">
+            <a class="socio-link" (click)="onSocioClick($event, socio.id)">
+                {{ socio.nome }}
+            </a>
+            <span class="empresa">Sócio em: {{ socio.empresa.nome }}</span>
+            
+        </li>
+    </ul>
+</div>
